@@ -6,7 +6,7 @@ var peopleRouter = require("./routes/people_router");
 var thingsRouter = require("./routes/things_router");
 var sessionsRouter = require("./routes/sessions_router");
 
-db.connect("mongodb://localhost", function(){
+db.connect(process.env.CONN, function(){
   console.log("connected"); 
 });
 
@@ -24,4 +24,4 @@ app.use("/api/people", peopleRouter);
 app.use("/api/things", thingsRouter);
 app.use("/api/sessions", sessionsRouter);
 
-app.listen(3000);
+app.listen(process.env.PORT);
