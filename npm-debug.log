@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'shrinkwrap' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn unmet dependency /Users/ryanfsalerno/Desktop/project/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/node_modules/bson/node_modules/bson-ext/node_modules/node-pre-gyp requires rimraf@'~2.3.2' but will load
+4 warn unmet dependency /Users/ryanfsalerno/Desktop/project/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/node_modules/rimraf,
+4 warn unmet dependency which is version 2.2.6
+5 warn unmet dependency /Users/ryanfsalerno/Desktop/project/node_modules/bower/node_modules/decompress-zip requires nopt@'^3.0.1' but will load
+5 warn unmet dependency undefined,
+5 warn unmet dependency which is version undefined
+6 error Error: Problems were encountered
+6 error Please correct and try again.
+6 error missing: acorn@~0.11.0, required by ng-annotate@0.15.4
+6 error missing: alter@~0.2.0, required by ng-annotate@0.15.4
+6 error missing: convert-source-map@~0.4.1, required by ng-annotate@0.15.4
+6 error missing: optimist@~0.6.1, required by ng-annotate@0.15.4
+6 error missing: ordered-ast-traverse@~1.1.1, required by ng-annotate@0.15.4
+6 error missing: simple-fmt@~0.1.0, required by ng-annotate@0.15.4
+6 error missing: simple-is@~0.2.0, required by ng-annotate@0.15.4
+6 error missing: source-map@~0.1.43, required by ng-annotate@0.15.4
+6 error missing: stable@~0.1.5, required by ng-annotate@0.15.4
+6 error missing: stringmap@~0.2.2, required by ng-annotate@0.15.4
+6 error missing: stringset@~0.2.1, required by ng-annotate@0.15.4
+6 error missing: tryor@~0.1.2, required by ng-annotate@0.15.4
+6 error missing: nopt@~3.0.1, required by node-pre-gyp@0.6.4
+6 error missing: npmlog@~1.2.0, required by node-pre-gyp@0.6.4
+6 error missing: rc@~1.0.1, required by node-pre-gyp@0.6.4
+6 error missing: request@2.x, required by node-pre-gyp@0.6.4
+6 error missing: semver@~4.3.3, required by node-pre-gyp@0.6.4
+6 error missing: tar@~2.1.0, required by node-pre-gyp@0.6.4
+6 error missing: tar-pack@~2.0.0, required by node-pre-gyp@0.6.4
+6 error invalid: rimraf@2.2.6 /Users/ryanfsalerno/Desktop/project/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/node_modules/rimraf
+6 error missing: optimist@0.2, required by event-stream@0.5.3
+6 error extraneous: longjohn@0.2.4 /Users/ryanfsalerno/Desktop/project/node_modules/longjohn
+6 error extraneous: angular-route@1.3.15 /Users/ryanfsalerno/Desktop/project/node_modules/angular-route
+6 error extraneous: bower@1.4.1 /Users/ryanfsalerno/Desktop/project/node_modules/bower
+6 error missing: nopt@^3.0.1, required by bower@1.4.1
+6 error missing: nopt@^3.0.1, required by decompress-zip@0.1.0
+6 error missing: amdefine@>=0.0.4, required by source-map@0.1.43
+6 error     at shrinkwrap_ (/usr/local/lib/node_modules/npm/lib/shrinkwrap.js:30:15)
+6 error     at /usr/local/lib/node_modules/npm/lib/shrinkwrap.js:24:5
+6 error     at /usr/local/lib/node_modules/npm/lib/ls.js:45:30
+6 error     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:130:5
+6 error     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:244:14
+6 error     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+6 error     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:244:14
+6 error     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+6 error     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:244:14
+6 error     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+7 error If you need help, you may report this *entire* log,
+7 error including the npm and node versions, at:
+7 error     <http://github.com/npm/npm/issues>
+8 error System Darwin 13.1.0
+9 error command "node" "/usr/local/bin/npm" "shrinkwrap"
+10 error cwd /Users/ryanfsalerno/Desktop/project
+11 error node -v v0.10.32
+12 error npm -v 1.4.28
+13 verbose exit [ 1, true ]
