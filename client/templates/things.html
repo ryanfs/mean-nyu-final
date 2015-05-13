@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 well">
+  </div>
+</div>
+<ul class="list-group">
+  <li class="list-group-item" ng-repeat="thing in things">
+    <div class="row">
+      <div class="col-md-9">
+        <a ng-href='things/{{ thing._id }}'>Thing Name: {{ thing.name }}</a>
+        <br />
+        <div class="label" style="background-color: {{ thing.color }}">
+          Here is the Thing's Color: {{ thing.color }}
+        </div>
+        <br />
+        <div>
+          Here is the Thing's Description: {{ thing.description }}
+        </div>
+      </div>
+      <div class="col-md-3 text-right">
+        <button ng-click="edit(thing)" class="btn btn-primary" ng-show="user.authenticated()">Edit</button>
+        <button ng-click="delete(thing)" class="btn btn-danger" ng-show="user.authenticated()">Delete</button>
+      </div>
+    </div>
+  </li>
+</ul>

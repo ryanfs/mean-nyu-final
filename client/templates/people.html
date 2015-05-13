@@ -1,0 +1,55 @@
+<div class="alert alert-danger" ng-show="error">
+  {{ error }}
+</div>
+
+<div class="alert alert-success" ng-show="success">
+  {{ success }}
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 well">
+    <form style="margin: 10px 0" ng-show="user.authenticated()">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" ng-model="inserting.name">
+      </div>
+      <!-- Adding ability to select is person is active/inactive -->
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="inserting.active" /> Active
+        </label>
+      </div>
+      <!-- Adding ability to add a color to a person -->
+      <div class="form-group">
+        <label>Person Color</label>
+        <select class="form-control" ng-model="inserting.color">
+          <option value="red">Red</option>
+          <option value="organge">Orange</option>
+          <option value="blue">Blue</option>
+          <option value="purple">Purple</option>
+          <option value="turquoise">Turquoise</option>
+        </select>
+      </div>
+      <button class="btn btn-success" ng-click="insert()">Save</button>
+    </form>
+  </div>
+</div>
+<ul class="list-group">
+  <li class="list-group-item" ng-repeat="person in people">
+    <div class="row">
+      <div class="col-md-9">
+        <a ng-href='people/{{ person._id }}'>{{ person.name }}</a>
+        <br />
+        <span class="label" ng-class="{'label-warning': !person.active, 'label-success': person.active}">{{ person.active? "active" : "inactive" }}</span>
+        <br />
+        <div class="label" style="background-color: {{ person.color }}">
+          {{ person.color }}
+        </div>
+      </div>
+      <div class="col-md-3 text-right">
+        <button ng-click="edit(person)" class="btn btn-primary" ng-show="user.authenticated()">Edit</button>
+        <button ng-click="delete(person)" class="btn btn-danger" ng-show="user.authenticated()" ng-disabled="person.active">Delete</button>
+      </div>
+    </div>
+  </li>
+</ul>

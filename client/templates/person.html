@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-9" ng-model="person">
+    Person Name: {{ person.name }}
+    <br />
+    <div class="label" style="background-color: {{ person.color }}">
+      Here is the Person's Color: {{ person.color }}
+    </div>
+    <br />
+    <div>
+     Active? {{ person.active? "active" : "inactive" }}
+    </div>
+  </div>
+</div>
